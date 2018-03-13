@@ -1,6 +1,6 @@
 # semsim
-##Semantic Similarity For English language 
-###Calculates a score for semantic similarity
+## Semantic Similarity For English language 
+### Calculates a score for semantic similarity
 
 ## Features
 
@@ -33,7 +33,7 @@ Two English text strings
 
 
 ## Example:
-###Code 
+
 
 ```python
 
@@ -55,12 +55,11 @@ model.similar(q1,q2)
 {'numbers': [[], []], 'keywords': [['cost', 'shirt'], ['cost', 'shirt']], 'max_keywords': 4,
 'f_class': True, 'entities': [[], []], 'sentiment': [0.0, 0.0, 0.0], 'sim': 1, 'class': [5, 5],
 'keras': 98.558107145608687, 'sim_per': 86.779053572804344, 'keywords_sim': 75.0}
-
 </pre>
 
 -----
 
-###Code
+
 
 ```python
 
@@ -72,12 +71,11 @@ model.similar(q1,q2)
 ```
 
 ### Output
-- similar
+- not similar
 
 <pre>
-{'numbers': [[], []], 'keywords': [['cost', 'shirt'], ['cost', 'shirt']], 'max_keywords': 4,
-'f_class': True, 'entities': [[], []], 'sentiment': [0.0, 0.0, 0.0], 'sim': 1, 'class': [5, 5],
-'keras': 98.558107145608687, 'sim_per': 86.779053572804344, 'keywords_sim': 75.0}
-
+{'keywords': [['shirt', 'cost'], ['shirt', 'weigh']], 'sim_per': 45.730595498683286, 'max_keywords':
+ 5, 'keywords_sim': 40.0, 'f_class': True, 'class': [5, 5], 'sentiment': [0.0, 0.0, 0.0], 'numbers':
+ [[], []], 'entities': [[], []], 'keras': 51.461190997366565, 'sim': 0}
 </pre>
 
